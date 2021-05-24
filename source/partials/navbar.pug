@@ -1,0 +1,35 @@
+header.header-block.bg-primary.py-3
+    .container-fluid
+        .row
+            .col-4.col-lg-3.align-self-center
+                h4.text-white.brand-name.mb-0.loading #{brandName}
+            .col-sm-12.col-lg-6.align-self-center.order-3.order-lg-2.position-relative.mt-3.mt-lg-0.search-wrapper
+                input.searchbar.w-100.shadow-sm(type="search", name="searchQuery" placeholder="Search for products, items and more")
+                span.position-absolute.mdi.mdi-magnify.text-muted
+            .col-8.col-sm-8.col-lg-3.order-2.order-lg-3.align-self-center
+                .widget-holder.d-flex.justify-content-end
+                    a.widget.text-white.mb-0(href="notification.html") 
+                        span.mdi.mdi-bell
+                    a.widget.text-white.mb-0(href="profile.html") 
+                        span.mdi.mdi-account-check
+                    a.widget.text-white.mb-0.position-relative(href="cart.html") 
+                        span.mdi.mdi-cart
+                        span.badge.rounded-pill.bg-danger.pin 3
+.bottom-nav.shadow-sm.loading
+    .container-fluid
+        .nav-wrapper
+            a.widget(href="index.html#category-holder") 
+                span.icon-holder.rounded-circle.bg-primary.text-white
+                    i.mdi.mdi-format-list-bulleted
+                span All Actegory
+            a.widget(href="listings.html") Top Categories
+            a.widget(href="listings.html") Grocery
+            a.widget(href="listings.html") Mobiles
+            a.widget(href="listings.html") Fashion
+            a.widget(href="listings.html") Electronics
+            a.widget(href="listings.html") Home
+            a.widget(href="listings.html") Appliances
+            a.widget(href="listings.html") Travel
+            a.widget(href="listings.html") Beauty
+            a.widget(href="listings.html") Toys
+            a.widget(href="listings.html") Personal Hygiene

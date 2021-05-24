@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joy Dey">
+    <title>Kmart | Agartals's Largest Online Store</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/materialdesignicons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body class="bg-light">
+    <section class="py-5" id="signup-page-section">
+      <div class="container">
+        <div class="card signup-card mx-auto border-0 shadow-sm">
+          <div class="card-header bg-white border-bottom py-3 d-flex align-items-center">
+            <h4 class="brand-name fw-bold text-primary mb-0">kmart</h4>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title mb-4">Signup</h4>
+            <div class="alert alert-danger d-none"><span class="error-text">The Email Address already exists</span></div>
+            <form id="signupForm" action="">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <div class="form-group"> 
+                    <label class="mb-2 text-muted" for="firstName">First Name</label>
+                    <input class="form-control" id="firstName" type="text" name="firstName">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group"> 
+                    <label class="mb-2 text-muted" for="lastName">Last Name</label>
+                    <input class="form-control" id="lastName" type="text" name="lastName">
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-group">
+                  <label class="mb-2 text-muted" for="email">Email Address</label>
+                  <input class="form-control" id="email" type="email" name="emailAddress"><small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-group">
+                  <label class="mb-2 text-muted" for="phone">Phone Number</label>
+                  <input class="form-control" id="phone" type="tel" name="phoneNumber" inputmode="tel"><small class="form-text text-muted">We'll never share your Phone Number with anyone else.</small>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-group">
+                  <label class="me-3" for="genderM">
+                    <input class="form-check-input" id="genderM" type="radio" name="gender"><span class="ms-2">Male</span>
+                  </label>
+                  <label for="genderF">
+                    <input class="form-check-input" id="genderF" type="radio" name="gender"><span class="ms-2">Female</span>
+                  </label>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label class="mb-2 text-muted" for="city">City</label>
+                    <input class="form-control" id="city" type="text" name="city">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label class="mb-2 text-muted" for="pincode">Pin Code</label>
+                    <input class="form-control" id="pincode" type="text" name="pincode">
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label class="mb-2 text-muted" for="password">Password</label>
+                    <input class="form-control" id="password" type="password" name="password">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label class="mb-2 text-muted" for="repassword">Re-Enter Password</label>
+                    <input class="form-control" id="repassword" type="password" name="repassword">
+                  </div>
+                </div>
+              </div>
+              <div class="terms-agreement-holder">
+                <div class="form-group">
+                  <label for="agreement"> 
+                    <input class="form-check-input" id="agreement" type="checkbox" name="agreement"><span class="ms-2"> </span>I Agree to the <a href="#">Terms &amp; Condition</a>
+                  </label>
+                </div>
+              </div>
+              <div class="button-holder mt-4">
+                <button class="btn btn-primary w-100 d-block disabled" id="registerButton" type="submit">Create Account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <p class="login-redirection text-center mt-4"><span class="me-2">Already Have an Account?</span><a href="login.html">Login</a></p>
+      </div>
+    </section>
+  </body>
+  <script src="assets/js/jquery.min.js"> </script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.js"> </script>
+  <script src="assets/js/main.js"> </script>
+</html>

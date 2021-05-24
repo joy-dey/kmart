@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joy Dey">
+    <title>Kmart | Agartals's Largest Online Store</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/materialdesignicons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body class="bg-light">
+    <header class="header-block bg-primary py-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 col-lg-3 align-self-center">
+            <h4 class="text-white brand-name mb-0 loading">kmart</h4>
+          </div>
+          <div class="col-sm-12 col-lg-6 align-self-center order-3 order-lg-2 position-relative mt-3 mt-lg-0 search-wrapper">
+            <input class="searchbar w-100 shadow-sm" type="search" name="searchQuery" placeholder="Search for products, items and more"><span class="position-absolute mdi mdi-magnify text-muted"></span>
+          </div>
+          <div class="col-8 col-sm-8 col-lg-3 order-2 order-lg-3 align-self-center">
+            <div class="widget-holder d-flex justify-content-end"><a class="widget text-white mb-0" href="notification.html"> <span class="mdi mdi-bell"></span></a><a class="widget text-white mb-0" href="profile.html"> <span class="mdi mdi-account-check"></span></a><a class="widget text-white mb-0 position-relative" href="cart.html"> <span class="mdi mdi-cart"></span><span class="badge rounded-pill bg-danger pin">3</span></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="bottom-nav shadow-sm loading">
+      <div class="container-fluid">
+        <div class="nav-wrapper"><a class="widget" href="index.html#category-holder"> <span class="icon-holder rounded-circle bg-primary text-white"><i class="mdi mdi-format-list-bulleted"></i></span><span>All Actegory</span></a><a class="widget" href="listings.html">Top Categories</a><a class="widget" href="listings.html">Grocery</a><a class="widget" href="listings.html">Mobiles</a><a class="widget" href="listings.html">Fashion</a><a class="widget" href="listings.html">Electronics</a><a class="widget" href="listings.html">Home</a><a class="widget" href="listings.html">Appliances</a><a class="widget" href="listings.html">Travel</a><a class="widget" href="listings.html">Beauty</a><a class="widget" href="listings.html">Toys</a><a class="widget" href="listings.html">Personal Hygiene</a></div>
+      </div>
+    </div>
+    <section class="profile-section py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card navigation-card border-0 shadow-sm">
+              <div class="card-body">
+                <ul class="list-group navigation">
+                  <li class="border-0 border-bottom list-group-item cursor-pointer" data-target="#overview">Account Overview</li>
+                  <li class="border-0 border-bottom list-group-item cursor-pointer" data-target="#address">My Address</li>
+                  <li class="border-0 border-bottom list-group-item cursor-pointer" data-target="#orders">My Orders</li>
+                  <li class="border-0 border-bottom list-group-item cursor-pointer" data-target="#uploadReceipt">Order by Shopping List</li>
+                  <li class="border-0 border-bottom list-group-item cursor-pointer"><a class="text-decoration-none text-dark" href="login.html">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 mt-3 mt-lg-0">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <div class="tab-content p-3">
+                  <div class="active" id="overview" data-tab-content="">
+                    <header class="d-flex">
+                      <figure><img class="img-fluid rounded-circle border img-sm" src="assets/img/avatar2.jpg" alt=""></figure>
+                      <div class="profie-info ms-3"><strong class="name">Joy Dey</strong>
+                        <p class="text-muted mb-2 small">deyjoy56@gmail.com</p>
+                        <button class="btn btn-light border btn-sm" data-bs-toggle="modal" data-bs-target="#editProfile">Edit</button>
+                      </div>
+                    </header>
+                    <hr>
+                    <div class="additional-info">
+                      <div class="address-block">
+                        <p class="text-muted mb-0"></p><i class="mdi mdi-map-marker me-1"></i>My Address
+                        <address>Amtali, Agartala, Tripura 799130</address>
+                      </div>
+                    </div>
+                    <div class="stats-block">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="holder p-3 shadow-sm">
+                            <h4 class="fw-bold">21</h4><span>Orders</span>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="holder p-3 shadow-sm">
+                            <h4 class="fw-bold">2</h4><span>Awaiting Delivery</span>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="holder p-3 shadow-sm">
+                            <h4 class="fw-bold">19</h4><span>Delivered</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="address" data-tab-content="">
+                    <div class="button-holder"></div>
+                    <button class="btn btn-light border" data-bs-toggle="modal" data-bs-target="#addressPopup">+ Add Address</button>
+                    <div class="addresses-holder row mt-3">
+                      <div class="col-md-4 mb-3">
+                        <div class="card address-card">
+                          <div class="card-body"><span class="badge bg-light text-muted small text-uppercase">home</span>
+                            <div class="info-holder d-flex align-items-center mt-3">
+                              <h6 class="name mb-0">Joy Dey</h6>
+                              <p class="h6 phone ms-3 mb-0">7628886035</p>
+                            </div>
+                            <address class="mt-3 text-muted">Bholagiri Ashram Road, Amtali, Agartala, 799130</address>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card address-card">
+                          <div class="card-body"><span class="badge bg-light text-muted small text-uppercase">work</span>
+                            <div class="info-holder d-flex align-items-center mt-3">
+                              <h6 class="name mb-0">Joy Dey</h6>
+                              <p class="h6 phone ms-3 mb-0">7628886035</p>
+                            </div>
+                            <address class="mt-3 text-muted">Bholagiri Ashram Road, Amtali, Agartala, 799130</address>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="orders" data-tab-content="">
+                    <div class="row">
+                      <div class="item col-lg-4 col-md-3 mb-3">
+                        <div class="card"><img class="card-img-top" src="assets/img/2.jpg" alt="">
+                          <div class="card-body"><a class="text-dark d-block text-decoration-none text-truncate" href="productdetails.html">Name of Product Shown here</a><strong class="price">&#x20B9;499.00</strong>
+                            <div class="button-group mt-2"></div>
+                            <button class="btn btn-sm btn-primary">Re-Order</button>
+                            <button class="btn btn-sm btn-danger"><i class="mdi mdi-close"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-lg-4 col-md-3 mb-3">
+                        <div class="card"><img class="card-img-top" src="assets/img/1.jpg" alt="">
+                          <div class="card-body"><a class="text-dark d-block text-decoration-none text-truncate" href="productdetails.html">Name of Product Shown here</a><strong class="price">&#x20B9;499.00</strong>
+                            <div class="button-group mt-2"></div>
+                            <button class="btn btn-sm btn-primary">Re-Order</button>
+                            <button class="btn btn-sm btn-danger"><i class="mdi mdi-close"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-lg-4 col-md-3 mb-3">
+                        <div class="card"><img class="card-img-top" src="assets/img/5.jpg" alt="">
+                          <div class="card-body"><a class="text-dark d-block text-decoration-none text-truncate" href="productdetails.html">Name of Product Shown here</a><strong class="price">&#x20B9;499.00</strong>
+                            <div class="button-group mt-2"></div>
+                            <button class="btn btn-sm btn-primary">Re-Order</button>
+                            <button class="btn btn-sm btn-danger"><i class="mdi mdi-close"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item col-lg-4 col-md-3 mb-3">
+                        <div class="card"><img class="card-img-top" src="assets/img/4.jpg" alt="">
+                          <div class="card-body"><a class="text-dark d-block text-decoration-none text-truncate" href="productdetails.html">Name of Product Shown here</a><strong class="price">&#x20B9;499.00</strong>
+                            <div class="button-group mt-2"></div>
+                            <button class="btn btn-sm btn-primary">Re-Order</button>
+                            <button class="btn btn-sm btn-danger"><i class="mdi mdi-close"> </i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="uploadReceipt" data-tab-content="">
+                    <div class="form-group mb-2">
+                      <input class="form-control" type="file" name="name" placeholder="Name">
+                    </div>
+                    <button class="btn btn-primary">Upload Shopping List</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="addressPopup" tabindex="-1" aria-labelledby="Rating" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add an Address</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="text" name="name" placeholder="Name">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="tel" name="phone" placeholder="10 digit mobile number" max="10">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="text" name="pin" placeholder="Pincode">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="text" name="locality" placeholder="Locality">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-2">
+                    <textarea class="form-control" name="address" cols="30" rows="3" placeholder="Address (Area &amp; Street)"></textarea>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="text" name="city" placeholder="City/District/Town">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="tel" name="state" placeholder="State">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="text" name="landmark" placeholder="Landmark">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="tel" name="alternatePhone" placeholder="Alternate Phone" max="10">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="text-muted d-block small mb-2">Address Type</label>
+                    <label class="me-3" for="addressHome">
+                      <input class="form-check-input" id="addressHome" type="radio" name="addressType"><span class="ms-2">Home</span>
+                    </label>
+                    <label for="addressWork">
+                      <input class="form-check-input" id="addressWork" type="radio" name="addressType"><span class="ms-2">Work</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" type="button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="Rating" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group mb-2"></div>
+                  <input class="form-control" type="text" name="fname" placeholder="First Name">
+                </div>
+                <div class="col-6">
+                  <div class="form-group mb-2"></div>
+                  <input class="form-control" type="text" name="lname" placeholder="Last Name">
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-2"></div>
+                  <input class="form-control" type="tel" name="phone" placeholder="10 digit mobile number" max="10">
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-2"></div>
+                  <input class="form-control" type="email" name="email" placeholder="Email Address">
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-2"></div>
+                  <label class="text-muted d-block small mb-2">Gender</label>
+                  <label class="me-3" for="genderM">
+                    <input class="form-check-input" id="genderM" type="radio" name="gender"><span class="ms-2">Male</span>
+                  </label>
+                  <label for="genderF">
+                    <input class="form-check-input" id="genderF" type="radio" name="gender"><span class="ms-2">Female</span>
+                  </label>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-2"></div>
+                  <label class="text-muted small">Attach Images</label>
+                  <input class="form-control mt-2" type="file" name="">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" type="button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="assets/js/jquery.min.js"> </script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.js"> </script>
+  <script src="assets/js/main.js"> </script>
+</html>

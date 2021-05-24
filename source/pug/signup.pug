@@ -1,0 +1,72 @@
+extend ../template/skeleton
+block nav
+    
+block main
+    section#signup-page-section.py-5
+        .container
+            .card.signup-card.mx-auto.border-0.shadow-sm
+                .card-header.bg-white.border-bottom.py-3.d-flex.align-items-center
+                    h4.brand-name.fw-bold.text-primary.mb-0 kmart
+                .card-body
+                    h4.card-title.mb-4 Signup
+                    .alert.alert-danger.d-none
+                        span.error-text The Email Address already exists
+                    form#signupForm(action="")
+                        .row.mb-3
+                            .col-6
+                                .form-group  
+                                    label.mb-2.text-muted(for="firstName") First Name
+                                    input.form-control#firstName(type="text", name="firstName")
+                            .col-6
+                                .form-group  
+                                    label.mb-2.text-muted(for="lastName") Last Name
+                                    input.form-control#lastName(type="text", name="lastName")
+                        .row.mb-3
+                            .form-group
+                                label.mb-2.text-muted(for="email") Email Address
+                                input.form-control#email(type="email", name="emailAddress")
+                                small.form-text.text-muted We'll never share your email with anyone else.
+                        .row.mb-3
+                            .form-group
+                                label.mb-2.text-muted(for="phone") Phone Number
+                                input.form-control#phone(type="tel", name="phoneNumber", inputmode="tel")
+                                small.form-text.text-muted We'll never share your Phone Number with anyone else.
+                        .row.mb-3
+                            .form-group
+                                label(for="genderM").me-3
+                                    input.form-check-input#genderM(type="radio", name="gender") 
+                                    span.ms-2 Male
+                                label(for="genderF")
+                                    input.form-check-input#genderF(type="radio", name="gender") 
+                                    span.ms-2 Female
+                        .row.mb-3
+                            .col-6
+                                .form-group
+                                    label.mb-2.text-muted(for="city") City
+                                    input.form-control#city(type="text", name="city")
+                            .col-6
+                                .form-group
+                                    label.mb-2.text-muted(for="pincode") Pin Code
+                                    input.form-control#pincode(type="text", name="pincode")
+                        .row.mb-3
+                            .col-6
+                                .form-group
+                                    label.mb-2.text-muted(for="password") Password
+                                    input.form-control#password(type="password", name="password")
+                            .col-6
+                                .form-group
+                                    label.mb-2.text-muted(for="repassword") Re-Enter Password
+                                    input.form-control#repassword(type="password", name="repassword")
+
+                        .terms-agreement-holder
+                            .form-group
+                                label(for="agreement") 
+                                    input#agreement.form-check-input(type="checkbox", name="agreement")
+                                    span.ms-2 
+                                    | I Agree to the 
+                                    a(href="#") Terms &amp; Condition
+                        .button-holder.mt-4
+                            button.btn.btn-primary.w-100.d-block.disabled#registerButton(type="submit") Create Account
+            p.login-redirection.text-center.mt-4
+                span.me-2 Already Have an Account?
+                a(href="login.html") Login

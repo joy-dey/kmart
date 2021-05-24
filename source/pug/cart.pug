@@ -1,0 +1,71 @@
+extend ../template/skeleton
+block main
+    section.cart-section
+      .container.cart-container.my-4
+        .row
+          .col-md-8.mb-3
+            .card.border-0.shadow-sm
+              .card-header.bg-white
+                .d-flex.justify-content-between.align-items-center
+                  h5 My Cart
+                  .form-group.mb-0
+                    select.form-control.border
+                      option(value='12' selected='') Select Address
+                      option(value='13') This is item 2
+                      option(value='14') This is item 3
+              .card-body
+                  .cart-items-list.pb-3.pt-2.mt-0
+                    .row.cart-item.border-bottom.py-3
+                        .col-md-6.mb-3.mb-md-0
+                            figure.d-flex.mb-0
+                                .aside
+                                    img.img-fluid.img-sm.border(src="assets/img/1.jpg", alt="")
+                                figcaption.ps-3
+                                    a.d-block.text-decoration-none.text-dark.h5.fw-normal(href="#") Tripr Half Sleeve T-Shirt
+                                    strong.price ₹499
+                                    .actions                                       
+                                        a.text-decoration-none.text-danger.ms-2(href="#") Delete
+                        .col.d-flex.justify-content-end.align-items-center
+                            .counter.input-group
+                                button.sub.btn.btn-light.border -
+                                input.form-control(type="text", name="", value="1")
+                                button.add.btn.btn-light.border +
+                    .row.cart-item.border-bottom.py-3
+                        .col-md-6.mb-3.mb-md-0
+                            figure.d-flex.mb-0
+                                .aside
+                                    img.img-fluid.img-sm.border(src="assets/img/2.jpg", alt="")
+                                figcaption.ps-3
+                                    a.d-block.text-decoration-none.text-dark.h5.fw-normal(href="#") Tripr Half Sleeve T-Shirt
+                                    strong.price ₹499
+                                    .actions
+                                        a.text-decoration-none.text-danger.ms-2(href="#") Delete
+                        .col.d-flex.justify-content-end.align-items-center
+                            .counter.input-group
+                                button.sub.btn.btn-light.border -
+                                input.form-control(type="text", name="", value="1")
+                                button.add.btn.btn-light.border +
+            .p-3.bg-white.sticky-card.d-flex.justify-content-between(style=" box-shadow: 0 -2px 10px 0 rgb(0 0 0 / 10%);")
+              .priceblock
+                h5.mb-0 ₹4567
+                a.mt-2.small.fw-bold.text-decoration-none(href='#pricedetails') View Price Details
+              button.btn.btn-primary(type='button') PLACE ORDER
+          .col-md-4
+            #pricedetails.card.border-0.shadow-sm.sticky-card
+              .card-header.bg-white
+                h6.text-muted.text-uppercase Price Details
+              .card-body
+                .d-flex.justify-content-between.mb-3
+                  span Price
+                    span.ml-1 (42 items)
+                  span ₹4567.00
+                .d-flex.justify-content-between.mb-3
+                  span Delivery Fee
+                  span.fw-bold.text-success FREE
+                .d-flex.justify-content-between.py-3.border-top.border-bottom
+                  span.fw-bold Total Amount
+                  span.fw-bold ₹4567.00
+                .text-center.pt-3.pb-2
+                  p.mb-0.text-muted.small
+                    i.mdi.mdi-shield.me-2
+                    | Easy Returns. 100% Authentic Products

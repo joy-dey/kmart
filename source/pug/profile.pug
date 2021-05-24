@@ -1,0 +1,199 @@
+extend ../template/skeleton
+block main
+    section.profile-section.py-4
+        .container
+            .row
+                .col-md-3
+                    .card.navigation-card.border-0.shadow-sm
+                        .card-body
+                            ul.list-group.navigation
+                                li.border-0.border-bottom.list-group-item.cursor-pointer(data-target='#overview') Account Overview
+                                li.border-0.border-bottom.list-group-item.cursor-pointer(data-target='#address') My Address
+                                li.border-0.border-bottom.list-group-item.cursor-pointer(data-target='#orders') My Orders
+                                li.border-0.border-bottom.list-group-item.cursor-pointer(data-target='#uploadReceipt') Order by Shopping List
+                                li.border-0.border-bottom.list-group-item.cursor-pointer
+                                    a.text-decoration-none.text-dark(href='login.html') Logout
+                .col-md-9.mt-3.mt-lg-0
+                    .card.border-0.shadow-sm
+                        .card-body
+                            .tab-content.p-3
+                                #overview.active(data-tab-content='')
+                                    header.d-flex
+                                        figure
+                                            img.img-fluid.rounded-circle.border.img-sm(src='assets/img/avatar2.jpg' alt='')
+                                        .profie-info.ms-3
+                                            strong.name Joy Dey
+                                            p.text-muted.mb-2.small deyjoy56@gmail.com
+                                            button.btn.btn-light.border.btn-sm(data-bs-toggle='modal' data-bs-target='#editProfile') Edit
+                                    hr
+                                    .additional-info
+                                        .address-block
+                                            p.text-muted.mb-0
+                                            i.mdi.mdi-map-marker.me-1
+                                            | My Address
+                                            address Amtali, Agartala, Tripura 799130
+                                    .stats-block
+                                        .row
+                                            .col-md-4
+                                                .holder.p-3.shadow-sm
+                                                    h4.fw-bold 21
+                                                    span Orders
+                                            
+                                            .col-md-4
+                                                .holder.p-3.shadow-sm
+                                                    h4.fw-bold 2
+                                                    span Awaiting Delivery
+                                            .col-md-4
+                                                .holder.p-3.shadow-sm
+                                                    h4.fw-bold 19
+                                                    span Delivered
+                                #address(data-tab-content='')
+                                    .button-holder
+                                    button.btn.btn-light.border(data-bs-toggle='modal' data-bs-target='#addressPopup') + Add Address
+                                    .addresses-holder.row.mt-3
+                                        .col-md-4.mb-3
+                                            .card.address-card
+                                                .card-body
+                                                    span.badge.bg-light.text-muted.small.text-uppercase home
+                                                    .info-holder.d-flex.align-items-center.mt-3
+                                                        h6.name.mb-0 Joy Dey
+                                                        p.h6.phone.ms-3.mb-0 7628886035
+                                                    address.mt-3.text-muted Bholagiri Ashram Road, Amtali, Agartala, 799130
+                                        .col-md-4.mb-3
+                                            .card.address-card
+                                                .card-body
+                                                    span.badge.bg-light.text-muted.small.text-uppercase work
+                                                    .info-holder.d-flex.align-items-center.mt-3
+                                                        h6.name.mb-0 Joy Dey
+                                                        p.h6.phone.ms-3.mb-0 7628886035
+                                                    address.mt-3.text-muted Bholagiri Ashram Road, Amtali, Agartala, 799130
+                                #orders(data-tab-content='')
+                                    .row
+                                        .item.col-lg-4.col-md-3.mb-3
+                                            .card
+                                                img.card-img-top(src='assets/img/2.jpg' alt='')
+                                                .card-body
+                                                    a.text-dark.d-block.text-decoration-none.text-truncate(href='productdetails.html') Name of Product Shown here
+                                                    strong.price &#x20B9;499.00
+                                                    .button-group.mt-2
+                                                    button.btn.btn-sm.btn-primary Re-Order
+                                                    button.btn.btn-sm.btn-danger
+                                                        i.mdi.mdi-close
+                                        .item.col-lg-4.col-md-3.mb-3
+                                            .card
+                                                img.card-img-top(src='assets/img/1.jpg' alt='')
+                                                .card-body
+                                                    a.text-dark.d-block.text-decoration-none.text-truncate(href='productdetails.html') Name of Product Shown here
+                                                    strong.price &#x20B9;499.00
+                                                    .button-group.mt-2
+                                                    button.btn.btn-sm.btn-primary Re-Order
+                                                    button.btn.btn-sm.btn-danger
+                                                        i.mdi.mdi-close
+                                        .item.col-lg-4.col-md-3.mb-3
+                                            .card
+                                                img.card-img-top(src='assets/img/5.jpg' alt='')
+                                                .card-body
+                                                    a.text-dark.d-block.text-decoration-none.text-truncate(href='productdetails.html') Name of Product Shown here
+                                                    strong.price &#x20B9;499.00
+                                                    .button-group.mt-2
+                                                    button.btn.btn-sm.btn-primary Re-Order
+                                                    button.btn.btn-sm.btn-danger
+                                                        i.mdi.mdi-close
+                                        .item.col-lg-4.col-md-3.mb-3
+                                            .card
+                                                img.card-img-top(src='assets/img/4.jpg' alt='')
+                                                .card-body
+                                                    a.text-dark.d-block.text-decoration-none.text-truncate(href='productdetails.html') Name of Product Shown here
+                                                    strong.price &#x20B9;499.00
+                                                    .button-group.mt-2
+                                                    button.btn.btn-sm.btn-primary Re-Order
+                                                    button.btn.btn-sm.btn-danger
+                                                        i.mdi.mdi-close  
+                                #uploadReceipt(data-tab-content='')
+                                    .form-group.mb-2
+                                        input.form-control(type='file' name='name' placeholder='Name')
+                                    button.btn.btn-primary Upload Shopping List
+                            
+        #addressPopup.modal.fade(tabindex='-1' aria-labelledby='Rating' aria-hidden='true')
+            .modal-dialog.modal-dialog-scrollable.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5#exampleModalLabel.modal-title Add an Address
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        .row
+                            .col-6
+                                .form-group.mb-2
+                                    input.form-control(type='text' name='name' placeholder='Name')
+                            .col-6
+                                .form-group.mb-2
+                                    input.form-control(type='tel' name='phone' placeholder='10 digit mobile number' max='10')
+                            .col-6
+                                .form-group.mb-2
+                                    input.form-control(type='text' name='pin' placeholder='Pincode')
+                            .col-6
+                                .form-group.mb-2
+                                    input.form-control(type='text' name='locality' placeholder='Locality')
+                            .col-12
+                                .form-group.mb-2
+                                    textarea.form-control(name='address' cols='30' rows='3' placeholder='Address (Area & Street)')
+                            .col-6
+                                .form-group.mb-2
+                                    input.form-control(type='text' name='city' placeholder='City/District/Town')
+                            .col-6
+                                .form-group.mb-2
+                                    input.form-control(type='tel' name='state' placeholder='State')
+                            .col-6
+                                .form-group.mb-2
+                                    input.form-control(type='text' name='landmark' placeholder='Landmark')
+                            .col-6
+                                .form-group.mb-2
+                                    input.form-control(type='tel' name='alternatePhone' placeholder='Alternate Phone' max='10')
+                            .col-12
+                                .form-group
+                                    label.text-muted.d-block.small.mb-2 Address Type
+                                    label.me-3(for='addressHome')
+                                        input#addressHome.form-check-input(type='radio' name='addressType')
+                                        span.ms-2 Home
+                                    label(for='addressWork')
+                                        input#addressWork.form-check-input(type='radio' name='addressType')
+                                        span.ms-2 Work
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Submit
+        #editProfile.modal.fade(tabindex='-1' aria-labelledby='Rating' aria-hidden='true')
+            .modal-dialog.modal-dialog-scrollable.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5#exampleModalLabel.modal-title Edit Profile
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        .row
+                            .col-6
+                                .form-group.mb-2
+                                input.form-control(type='text' name='fname' placeholder='First Name')
+                            .col-6
+                                .form-group.mb-2
+                                input.form-control(type='text' name='lname' placeholder='Last Name')
+                            .col-12
+                                .form-group.mb-2
+                                input.form-control(type='tel' name='phone' placeholder='10 digit mobile number' max='10')
+                            .col-12
+                                .form-group.mb-2
+                                input.form-control(type='email' name='email' placeholder='Email Address')
+                            .col-12
+                                .form-group.mb-2
+                                label.text-muted.d-block.small.mb-2 Gender
+                                label.me-3(for='genderM')
+                                    input#genderM.form-check-input(type='radio' name='gender')
+                                    span.ms-2 Male
+                                label(for='genderF')
+                                    input#genderF.form-check-input(type='radio' name='gender')
+                                    span.ms-2 Female
+                            .col-12
+                                .form-group.mb-2
+                                label.text-muted.small Attach Images
+                                input.form-control.mt-2(type='file' name='')
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Submit

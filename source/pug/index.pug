@@ -1,0 +1,187 @@
+extend ../template/skeleton
+block main 
+    section.hero-slider.py-3
+        .container-fluid
+            .carousel-slide.single-item
+                div
+                    +image('bannerBakery.png', 'Bakery Banner')
+                div
+                    +image('bannerBeverages.png', 'Beverages Banner')
+                div
+                   +image('bannerVeg.png', 'Vegetables Banner')
+
+    section.category-section
+        .container-fluid
+            .card.border-0.shadow-sm#category-holder
+                .card-body
+                    .category-wrapper
+                        a(href="listings.html").text-decoration-none.text-muted.category-items
+                            .image-holder
+                                +image('Frame 15.png', 'Vegetables')
+                            .mt-2.text-center 
+                                p.small.text-muted.text-truncate.mb-0 Category Name
+                        a(href="listings.html").text-decoration-none.text-muted.category-items
+                            .image-holder
+                                +image('Frame 8.png', 'Vegetables')
+                            .mt-2.text-center 
+                                p.small.text-muted.text-truncate.mb-0 Category Name
+                        a(href="listings.html").text-decoration-none.text-muted.category-items
+                            .image-holder
+                                +image('Frame 9.png', 'Vegetables')
+                            .mt-2.text-center 
+                                p.small.text-muted.text-truncate.mb-0 Category Name
+                        a(href="listings.html").text-decoration-none.text-muted.category-items
+                            .image-holder
+                                +image('Frame 10.png', 'Vegetables')
+                            .mt-2.text-center 
+                                p.small.text-muted.text-truncate.mb-0 Category Name
+                        a(href="listings.html").text-decoration-none.text-muted.category-items
+                            .image-holder
+                                +image('Frame 11.png', 'Vegetables')
+                            .mt-2.text-center 
+                                p.small.text-muted.text-truncate.mb-0 Category Name
+                        a(href="listings.html").text-decoration-none.text-muted.category-items
+                            .image-holder
+                                +image('Frame 12.png', 'Vegetables')
+                            .mt-2.text-center 
+                                p.small.text-muted.text-truncate.mb-0 Category Name
+                        a(href="listings.html").text-decoration-none.text-muted.category-items
+                            .image-holder
+                                +image('Frame 13.png', 'Vegetables')
+                            .mt-2.text-center 
+                                p.small.text-muted.text-truncate.mb-0 Category Name
+                        a(href="listings.html").text-decoration-none.text-muted.category-items
+                            .image-holder
+                                +image('Frame 14.png', 'Vegetables')
+                            .mt-2.text-center 
+                                p.small.text-muted.text-truncate.mb-0 Category Name
+                        a(href="listings.html").text-decoration-none.text-muted.category-items
+                            .image-holder
+                                +image('Frame 7.png', 'Vegetables')
+                            .mt-2.text-center 
+                                p.small.text-muted.text-truncate.mb-0 Category Name
+    
+    section.product-showcase
+        .container-fluid.mt-3
+            .card.border-0.shadow-sm
+                .card-header.py-3.bg-white.border-bottom.d-flex.justify-content-between
+                    h5.fw-bold.mb-0 What's New
+                    button.btn.btn-primary.btn-sm.text-uppercase.fw-bold view all
+                .card-body
+                    .row
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 41.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart                                  
+                                    
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 42.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart      
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 45.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart      
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 46.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart      
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 47.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart      
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 48.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart      
+            .card.border-0.shadow-sm.mt-3
+                .card-header.py-3.bg-white.border-bottom.d-flex.justify-content-between
+                    h5.fw-bold.mb-0 Summer Special
+                    button.btn.btn-primary.btn-sm.text-uppercase.fw-bold view all
+                .card-body
+                    .row
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 41.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart                                  
+                                    
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 42.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart      
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 45.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart      
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 46.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart      
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 47.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart      
+                        .col-6.col-md-3.col-lg-2.mb-3
+                            .product-holder.pb-5
+                                +image('Frame 48.png', 'Frame 41')
+                                .prodct-details.text-center
+                                    h6.mt-3.fw-bold Product name
+                                    p.h6.small ₹399.00
+                                    button.addToCart
+                                        span.mdi.mdi-cart.me-2
+                                        span Add to Cart   
