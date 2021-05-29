@@ -137,6 +137,10 @@ body {
   height: auto;
 }
 
+.list-group-item.active {
+  background-color: #212529;
+}
+
 .category-wrapper {
   display: -ms-grid;
   display: grid;
@@ -167,7 +171,7 @@ body {
 
 .product-showcase .product-holder .addToCart,
 .product-search .product-holder .addToCart {
-  background-color: #0D6EFD;
+  background-color: #212529;
   color: #fff;
   width: 100%;
   border: 0;
@@ -194,6 +198,15 @@ body {
           transform: translate(50%, 0);
 }
 
+.receipts-holder table thead {
+  border-color: #9494944d;
+}
+
+.receipts-holder table th,
+.receipts-holder table td {
+  white-space: nowrap;
+}
+
 .profile-section li:hover {
   cursor: pointer;
 }
@@ -212,6 +225,12 @@ body {
 
 .notification-section .notification-item:hover {
   background-color: rgba(0, 0, 0, 0.03);
+}
+
+footer .wp-chat {
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 2rem;
 }
 
 @media (max-width: 768px) {

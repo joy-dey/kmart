@@ -34,6 +34,10 @@ body {
     }
 }
 
+.list-group-item.active {
+    background-color: #212529;
+}
+
 .category-wrapper {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -54,7 +58,7 @@ body {
         overflow: hidden;
         user-select: none;
         .addToCart {
-            background-color: #0D6EFD;
+            background-color: #212529;
             color: #fff;
             width: 100%;
             border: 0;
@@ -71,6 +75,18 @@ body {
             .addToCart {
                 transform: translate(50%, 0);
             }
+        }
+    }
+}
+
+.receipts-holder {
+    table {
+        thead {
+            border-color: #9494944d;
+        }
+        th,
+        td {
+            white-space: nowrap;
         }
     }
 }
@@ -95,6 +111,14 @@ body {
         &:hover {
             background-color: rgba($color: #000000, $alpha: 0.03);
         }
+    }
+}
+
+footer {
+    .wp-chat {
+        padding: 1rem 2rem;
+        border: 0;
+        border-radius: 2rem;
     }
 }
 

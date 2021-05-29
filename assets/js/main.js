@@ -109,3 +109,14 @@ if (counterUpButtons) {
         })
     })
 }
+
+let toggleButton = document.querySelector('.output button'),
+    timingsTable = document.querySelector('.timings'),
+    hourElems = Array.from(timingsTable.querySelectorAll('tr')),
+    today = new Date().getDay();
+
+toggleButton.addEventListener('click', function() {
+    timingsTable.classList.toggle('d-none');
+    hourElems[today - 1].classList.add('fw-bold')
+    console.log(today)
+})
